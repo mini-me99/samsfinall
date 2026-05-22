@@ -1,15 +1,13 @@
-from datetime import timedelta
 from django.utils import timezone
-from rest_framework import serializers, status
+from rest_framework import serializers
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from django.db.models import Sum, Q
+from django.db.models import Sum
 from apps.common.viewsets import AcademyScopedViewSet, AcademyMixin
 from apps.common.serializers import make_serializer
 from apps.sessions.models import SessionEnrollment, SessionOccurrence
-from apps.attendance.models import AttendanceRecord
 from apps.notifications.models import Notification
 from .models import Player, PlayerCoach, AttendanceStreak, CancellationRequest, CancellationVote, LoyaltyPoints, ReferralCode
 

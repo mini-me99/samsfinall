@@ -1,4 +1,3 @@
-from datetime import timedelta
 from django.utils import timezone
 from rest_framework import status
 from rest_framework.decorators import action

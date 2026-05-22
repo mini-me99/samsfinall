@@ -1,4 +1,3 @@
-from rest_framework import serializers
 from apps.common.viewsets import AcademyScopedViewSet
 from apps.common.serializers import make_serializer
 from .models import Group, GroupMembership
