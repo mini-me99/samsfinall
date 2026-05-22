@@ -37,7 +37,7 @@ jobs:
         run: |
           python manage.py makemigrations --noinput
           python manage.py migrate --noinput
-          python -m pytest -q --no-header -x --ignore=apps/permissions || true
+          python -m pytest -q --ignore=apps/permissions 2>&1 || true
 
   frontend:
     runs-on: ubuntu-latest
