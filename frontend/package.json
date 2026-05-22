@@ -1,0 +1,33 @@
+{
+  "name": "sams-frontend",
+  "version": "1.0.0",
+  "description": "Sports Academy Management System frontend",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "lint": "eslint --ext .js,.ts,.vue ./src",
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.0",
+    "axios": "^1.7.0",
+    "http-server": "^14.1.1",
+    "pinia": "^2.2.0",
+    "quasar": "^2.17.0",
+    "vue": "^3.5.0",
+    "vue-i18n": "^9.14.0",
+    "vue-router": "^4.4.0",
+    "@tanstack/vue-query": "^5.59.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "autoprefixer": "^10.4.0",
+    "typescript": "~5.5.0",
+    "vite-plugin-checker": "^0.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
