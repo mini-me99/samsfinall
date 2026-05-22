@@ -9,7 +9,8 @@ from apps.common.viewsets import AcademyScopedViewSet, AcademyMixin
 from apps.common.serializers import make_serializer
 from apps.sessions.models import SessionEnrollment, SessionOccurrence
 from apps.notifications.models import Notification
-from .models import Player, PlayerCoach, AttendanceStreak, CancellationRequest, CancellationVote, LoyaltyPoints, ReferralCode
+from apps.cancellations.models import CancellationRequest, CancellationVote
+from .models import Player, PlayerCoach, AttendanceStreak, LoyaltyPoints, ReferralCode
 
 
 PlayerSerializer = make_serializer(Player)
